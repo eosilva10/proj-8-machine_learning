@@ -2,7 +2,6 @@
 
 ### Requisitos
 
-Requirements for the software and other tools to build, test and push 
 - [Python](https://www.python.org/downloads/)
 - [Flask](https://flask.palletsprojects.com/en/2.2.x/installation/)
 - [Pickle](https://pypi.org/project/pickle5/)
