@@ -1,0 +1,93 @@
+/* FONTE */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* CORPO */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+h1{
+  text-align: center;
+  color:#ffffff;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.card{
+  background-color: rgb(71, 32, 161);
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-width: 50vw;
+}
+
+.label-float input{
+  align-self: center;
+} 
+
+.label-float{
+  color: white;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+button{
+  background-color: transparent;
+  border-color: white; 
+  color: white;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 3%;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover{
+  background-color: #eebb31;
+  color:white ; 
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+p{
+  color: #181818;
+  font-size: 14px;
+  text-align: center;
+}
+
+a{
+  color: #eebb31;
+  font-size: bold;
+  text-decoration: none;
+  transition: all .4s ease-out;
+}
+
+a:hover{
+  color: white;
+}
+
+/* MENSAGENS */
+#msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #181818;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}

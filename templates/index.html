@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+     
+
+    <title>Projeto Machine Learning</title>
+</head>
+
+<body>
+    <div id="proj">
+
+        
+        <center> <h4> PROJETO DE PREDIÇÃO DE IMÓVEIS </h4> </center>
+
+
+        <!-- FORM -->
+        <form action="/predict" method="POST">
+            <center> <div>
+                <label for="HouseArea"> Área da casa(m2) </label> <br>
+                <input type="text" class="form-control" id="HouseArea" name="HouseArea" aria-describedby="HouseArea" required
+                    
+            </div> </center>
+
+            <center> <div>
+                <label for="HouseBedrooms"> Número de quartos </label> <br>
+                <input type="text" class="form-control" id="HouseBedrooms" name="HouseBedrooms" aria-describedby="HouseBedrooms" required
+                    
+            </div> </center>
+
+             <center> <div>
+                <label for="HouseAge"> Tempo(idade) da casa </label> <br>
+                <input type="text" class="form-control" id="HouseAge" name="HouseAge" aria-describedby="HouseAge" required
+                    
+            </div></center>
+
+            <div id="botao">
+                <center><button type="submit" class="btn btn-primary"> Fazer Predição </button></center>
+            </div>
+            
+        </form>
+
+        <!-- FIM FORM -->
+
+        <div id="result">
+            {% if pred %}
+                <div>
+                    <div id="resul-text"> <center><b> RESULTADO </b></center></div>
+                        <h3 id="result-valor"><center> {{pred}} </center></h3>
+                        <!-- <p class="card-text">valor baseado em inputs de usuários</p> -->
+                    </div>
+                    <div id="result-estimado"><center> Preço Estimado </center></div>
+        </div>
+            {% endif %}
+
+        </div>
+
+</body>
+
+</html>

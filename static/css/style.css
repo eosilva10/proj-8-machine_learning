@@ -1,0 +1,74 @@
+/* FONTE */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* PREDEFINIÇÕES */
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+label {
+    color: white;
+    font-weight: lighter;
+}
+
+h4 {
+    color: white;
+}
+
+body {
+    background-color: white;
+}
+
+/* FORM */
+form {
+    align-items: center;
+}
+
+#proj {
+    width: 40vw;
+    background-color: rgb(71, 32, 161);
+    position:absolute;
+    left:30%;
+    top:20%;
+}
+
+#proj input {
+    width: 20vw;
+    margin-bottom: 20px;
+}
+
+#botao {    
+    margin-bottom: 20px;    
+}
+
+#botao button {    
+    cursor: pointer;
+    background-color: rgb(71, 32, 161);
+    border-color: white;
+    color: white;   
+}
+
+#botao button:hover {    
+    cursor: pointer;
+    background-color: white;
+    border-color: rgb(71, 32, 161);
+    color: rgb(71, 32, 161); 
+}
+
+#result {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    align-items: center;
+}
+
+#resul-text,
+#result-valor,
+#result-estimado {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#result-valor {
+    color: rgb(49, 209, 116);
+}
